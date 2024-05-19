@@ -1,0 +1,56 @@
+---
+title: "Progress Memo"
+subtitle: |
+  | Final Project 
+  | Data Visualization (STAT 302)
+author: "Jojo Kim"
+pagetitle: "Jojo Kim Progress Memo"
+date: today
+
+format:
+  html:
+    toc: true
+    toc-location: left
+    embed-resources: true
+    link-external-newwindow: true
+    code-fold: true
+    fig-dpi: 300
+
+execute:
+  warning: false
+
+from: markdown+emoji 
+reference-location: margin
+citation-location: margin
+---
+
+## Data source
+
+The dataset comes from Kaggle. The data concerns 165 different countries and various statistics about their happiness and other things that might correspond to their happiness.
+
+\n
+
+[https://www.kaggle.com/datasets/jainaru/world-happiness-report-2024-yearly-updated](Kaggle)
+
+## Basic data description
+
+```{r}
+library(here)
+library(tidyverse)
+
+happy <- read_csv(here("data/World-happiness-report-updated_2024.csv")) |> 
+  janitor::clean_names()
+
+skimr::skim_without_charts(happy) |> 
+  knitr::kable()
+```
+The dataset has a total of 2363 observations, as there are multiple observations for each country, spanning multiple years. There are a total of 11 variables in the dataset. The dataset has one categorical variable (country), and the rest are all numerical. There is some missingness in the dataset, but all variables have an above 95% completion rate, so for the purpose of this project, I plan to filter out any missingness when graphing variables.
+
+## Why this data
+
+This data is interesting because it can allow us to develop an understanding of what happiness is, what causes it, and where it is most prevalent. Everyone wants to be happy, therefore everyone will want to see this data. The overall goal of exploring this data is to develop an understanding of what factors lead to high happiness, and what places this is most prevalent in!
+
+## Visualization plan
+
+I plan to create a revealjs presentation which the user can go through and view the graphics of. I plan to analyze different variables on each slide and use tabs to allow the viewer to flip through that given variables relationship with other variables within the dataset.
+
