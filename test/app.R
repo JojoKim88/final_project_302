@@ -25,12 +25,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   
   selectData = reactive({
-    
-    if (input$Passenger_Class =="All") {
-      Titanic_subset <-  Titanic
-    } else {
-      Titanic_subset <- Titanic %>% filter(Class == input$Passenger_Class)
-    }
+      Titanic_subset <- Titanic
     
     if (input$Sex == "Male") {Titanic_subset <- Titanic_subset %>% filter(Sex == "Male")}
     if (input$Sex == "Female") {Titanic_subset <- Titanic_subset %>% filter(Sex == "Female")}

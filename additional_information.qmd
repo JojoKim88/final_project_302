@@ -1,0 +1,42 @@
+---
+title: "Progress Memo"
+subtitle: |
+  | Final Project 
+  | Data Visualization (STAT 302)
+author: "Jojo Kim"
+pagetitle: "Jojo Kim Progress Memo"
+date: today
+
+format:
+  html:
+    toc: true
+    toc-location: left
+    embed-resources: true
+    link-external-newwindow: true
+    code-fold: true
+    fig-dpi: 300
+
+execute:
+  warning: false
+
+from: markdown+emoji 
+reference-location: margin
+citation-location: margin
+---
+
+## Data source
+
+The dataset comes from Kaggle. The data concerns 165 different countries and various statistics about their happiness and other things that might correspond to their happiness.
+
+\n
+
+[kaggle](https://www.kaggle.com/datasets/jainaru/world-happiness-report-2024-yearly-updated)
+
+## Core Insights
+
+The visualization helps the viewer compare happiness between different countries as well as different factors corresponding with happiness and how they compare in different countries. The setup of the app I made allows for the user to be able to compare two countries and multiple variables at the click of a button, allowing for an incredibly large number of permutations of graphs. The ease with which the user is able to look through every country and variable in the dataset and compare it to any other country and variable is a result of the app providing assets that a static graph wouldn't. The selecter input allows the user to not only scroll through the list of countries alphabetically, but also use it as a search bar to find the country they are looking for. Furthermore, the radio buttons allow the user to easily choose whatever variable they desire to look at. Overall, the app allows the user to easily, at the click of a button, compare many different factors which would normally take much longer and much more work to compare by say looking at a traditional collection of static figures.
+
+## Difficulties
+
+It was very hard to setup the data subsetting to be able to display two different countries at the same time.
+

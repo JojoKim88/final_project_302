@@ -30,7 +30,7 @@ The dataset comes from Kaggle. The data concerns 165 different countries and var
 
 \n
 
-[https://www.kaggle.com/datasets/jainaru/world-happiness-report-2024-yearly-updated](Kaggle)
+[kaggle](https://www.kaggle.com/datasets/jainaru/world-happiness-report-2024-yearly-updated)
 
 ## Basic data description
 
