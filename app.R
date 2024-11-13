@@ -6,6 +6,7 @@ library(patchwork)
 library(scales)
 library(showtext)
 library(here)
+library(rsconnect)
 
 # data wrangling ----
 happy <- read.csv(here("data/World-happiness-report-updated_2024.csv")) |>
